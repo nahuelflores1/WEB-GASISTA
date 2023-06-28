@@ -1,0 +1,100 @@
+.services-section-container {
+    text-align: center;
+    background-color: #f1f1f1;
+    #services-section-title {
+        padding: 100px;
+        h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            color: #e18009;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        h5 {
+            margin: 15px 0px;
+            font-weight: 500;
+        }
+    }
+    .services-section {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            .column {
+                width: 100%;
+                padding: 0 1em 1em 1em;
+                text-align: center;
+                .card {
+                    width: 100%;
+                    height: 100%;
+                    padding: 2em 1.5em;
+                    background: linear-gradient(#ffffff 50%, #e17e09 50%);
+                    background-size: 100% 200%;
+                    background-position: 0 2.5%;
+                    border-radius: 5px;
+                    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+                    cursor: pointer;
+                    transition: 0.5s;
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #1f194c;
+                        margin: 1em 0;
+                        &:hover {
+                            color: #ffffff;
+                        }
+                    }
+                    p {
+                        color: #f0f0f0;
+                        font-size: 15px;
+                        line-height: 1.6;
+                        letter-spacing: 0.03em;
+                    }
+                    &:hover {
+                        background-position: 0 100%;
+                    }
+                    .icon-wrapper {
+                        background-color: #e17e09;
+                        position: relative;
+                        margin: auto;
+                        font-size: 30px;
+                        height: 2.5em;
+                        width: 2.5em;
+                        color: #ffffff;
+                        border-radius: 50%;
+                        display: grid;
+                        place-items: center;
+                        transition: 0.5s;
+                        &:hover {
+                            background-color: #ffffff;
+                            color: #e17e09;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .services-section {
+        padding: 0 2em;
+    }
+    .column {
+        flex: 0 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (min-width: 992px) {
+    s.services-section {
+        padding: 1em 3em;
+    }
+    .column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}

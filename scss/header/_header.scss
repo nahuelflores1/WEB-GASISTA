@@ -1,0 +1,31 @@
+.logo-gasista {
+    height: 76px;
+}
+
+.fa-instagram {
+    font-size: 25px;
+    padding: 5px;
+    background-color: #e17e09;
+    color: white;
+    &:hover {
+        color: #36250f7e;
+    }
+}
+
+.fa-facebook {
+    font-size: 25px;
+    padding: 5px;
+    background-color: #e17e09;
+    color: white;
+    &:hover {
+        color: #36250f7e;
+    }
+}
+
+.font-medium {
+    li {
+        .block {
+            border-bottom: #e17e09 solid 2px;
+        }
+    }
+}
