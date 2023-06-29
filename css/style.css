@@ -17,6 +17,14 @@
   .fa-facebook:hover {
     color: #36250f7e; }
 
+.fa-whatsapp-header {
+  font-size: 25px;
+  padding: 5px;
+  background-color: #25d366;
+  color: white; }
+  .fa-whatsapp-header:hover {
+    color: #36250f7e; }
+
 .font-medium li .block {
   border-bottom: #e17e09 solid 2px; }
 
@@ -52,7 +60,7 @@
   text-align: center;
   background-color: #f1f1f1; }
   .services-section-container #services-section-title {
-    padding: 100px; }
+    padding: 80px; }
     .services-section-container #services-section-title h1 {
       display: flex;
       justify-content: center;
@@ -72,9 +80,11 @@
       display: flex;
       flex-wrap: wrap; }
       .services-section-container .services-section .row .column {
+        display: flex;
         width: 100%;
         padding: 0 1em 1em 1em;
-        text-align: center; }
+        text-align: center;
+        justify-content: center; }
         .services-section-container .services-section .row .column .card {
           width: 100%;
           height: 100%;
@@ -133,6 +143,9 @@
 .hero {
   background-color: #f8f8f8;
   overflow: hidden; }
+
+html {
+  scroll-behavior: smooth; }
 
 .heading h1 {
   color: #ff6347;
@@ -287,7 +300,9 @@
   .card {
     width: 100%;
     max-width: 300px;
-    margin: 10px 0; } }
+    margin: 10px 0; }
+    .card p {
+      opacity: 1; } }
 
 .text-footer {
   font-size: 13px;
@@ -325,14 +340,32 @@
 
 @media screen and (max-width: 800px) {
   .gallery {
-    padding: 0px; }
+    padding: 50px; }
     .gallery .column {
       flex: 50%;
       max-width: 50%; } }
 
 @media screen and (max-width: 500px) {
   .gallery {
-    padding: 0px; }
+    padding: 50px; }
     .gallery .column {
       flex: 100%;
       max-width: 100%; } }
+
+.btn-wsp {
+  z-index: 11111111;
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px; }
+  .btn-wsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff; }

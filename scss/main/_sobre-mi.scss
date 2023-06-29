@@ -3,6 +3,10 @@
     overflow: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .heading h1 {
     color: #ff6347;
     font-size: 55px;
