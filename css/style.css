@@ -179,8 +179,7 @@
   .hero {
     margin: 0px; }
   .container-sobremi {
-    flex-direction: column;
-    margin: 50px; }
+    flex-direction: column; }
   .hero-content {
     width: 100%;
     margin: 35px 0px; }
@@ -301,6 +300,7 @@
     letter-spacing: 1px;
     text-align: center; }
   .gallery .column {
+    padding: 0px;
     flex: 25%;
     max-width: 25%; }
     .gallery .column .img-hover-zoom {
