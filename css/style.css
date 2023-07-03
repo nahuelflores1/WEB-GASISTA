@@ -144,9 +144,6 @@
   background-color: #f8f8f8;
   overflow: hidden; }
 
-html {
-  scroll-behavior: smooth; }
-
 .heading h1 {
   color: #ff6347;
   font-size: 55px;
@@ -158,32 +155,22 @@ html {
   justify-content: center;
   align-items: center;
   width: 80%;
-  margin: 65px auto; }
-
-.hero-content {
-  flex: 1;
-  width: 600px;
-  margin: 0px 25px;
-  animation: fadeInUp 2s ease; }
-  .hero-content h2 {
-    font-size: 33px;
-    margin-bottom: 20px;
-    color: #333;
-    border-bottom: 2px solid #e17e09; }
-  .hero-content p {
-    color: #666; }
-
-.hero-image {
-  display: flex;
-  flex: 1;
-  width: 600px;
-  margin: auto;
-  animation: fadeInRight 2s ease;
-  justify-content: center; }
-  .hero-image .img-sobremi {
-    width: 69%;
-    height: auto;
-    border-radius: 10px; }
+  margin: 100px auto; }
+  .container-sobremi .hero-content {
+    flex: 1;
+    width: 100%;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease; }
+    .container-sobremi .hero-content #contact {
+      text-align: center; }
+    .container-sobremi .hero-content h2 {
+      text-align: center;
+      font-size: 33px;
+      margin-bottom: 20px;
+      color: #333;
+      border-bottom: 2px solid #e17e09; }
+    .container-sobremi .hero-content p {
+      color: #666; }
 
 @media screen and (max-width: 768px) {
   .heading h1 {
@@ -192,10 +179,8 @@ html {
   .hero {
     margin: 0px; }
   .container-sobremi {
-    width: 100%;
     flex-direction: column;
-    margin: 0px;
-    padding: 0px 40px; }
+    margin: 50px; }
   .hero-content {
     width: 100%;
     margin: 35px 0px; }
@@ -204,13 +189,7 @@ html {
       font-size: 30px; }
     .hero-content p {
       font-size: 18px;
-      margin-bottom: 20px; }
-  .hero-image {
-    width: 100%; }
-    .hero-image .img-sobremi {
-      width: 100%;
-      height: auto;
-      border-radius: 10px; } }
+      margin-bottom: 20px; } }
 
 @keyframes fadeInUp {
   0% {
@@ -330,6 +309,8 @@ html {
       overflow: hidden;
       border: 5px solid #ffff; }
       .gallery .column .img-hover-zoom img {
+        object-fit: cover;
+        height: 500px;
         vertical-align: middle;
         margin: 0;
         padding: 0;
@@ -340,6 +321,8 @@ html {
 
 @media screen and (max-width: 800px) {
   .gallery {
+    margin-right: 0px;
+    margin-left: 0px;
     padding: 50px; }
     .gallery .column {
       flex: 50%;
@@ -347,6 +330,8 @@ html {
 
 @media screen and (max-width: 500px) {
   .gallery {
+    margin-right: 0px;
+    margin-left: 0px;
     padding: 50px; }
     .gallery .column {
       flex: 100%;

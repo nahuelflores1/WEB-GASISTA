@@ -21,6 +21,8 @@
             overflow: hidden;
             border: 5px solid #ffff;
             img {
+                object-fit: cover;
+                height: 500px;
                 vertical-align: middle;
                 margin: 0;
                 padding: 0;
@@ -36,6 +38,8 @@
 
 @media screen and (max-width: 800px) {
     .gallery {
+        margin-right: 0px;
+        margin-left: 0px;
         padding: 50px;
         .column {
             flex: 50%;
@@ -46,6 +50,8 @@
 
 @media screen and (max-width: 500px) {
     .gallery {
+        margin-right: 0px;
+        margin-left: 0px;
         padding: 50px;
         .column {
             flex: 100%;
